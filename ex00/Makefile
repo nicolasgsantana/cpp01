@@ -1,12 +1,12 @@
-NAME = 
+NAME = zombies
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-SRC =
-INC =
+SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+INC =Zombie.hpp
 
 all: $(NAME)
 
-$(NAME): $(SRC)
+$(NAME): $(SRC) $(INC)
 	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 clean:
