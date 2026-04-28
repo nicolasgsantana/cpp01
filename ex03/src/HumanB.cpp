@@ -16,7 +16,7 @@ void	HumanB::attack(void)
 		std::cout << this->m_name << "does not have a weapon" << std::endl;
 }
 
-void	HumanB::setWeapon(Weapon weapon)
+void	HumanB::setWeapon(Weapon &weapon)
 {
 	this->m_weapon = &weapon;
 }
