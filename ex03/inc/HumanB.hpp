@@ -1,6 +1,9 @@
-#include <string>
-#include <iostream>
-#include "Weapon.hpp"
+#ifndef HUMANB_HPP
+# define HUMANB_HPP
+
+# include <string>
+# include <iostream>
+# include "Weapon.hpp"
 
 class HumanB
 {
@@ -12,3 +15,5 @@ class HumanB
 		void	setWeapon(Weapon weapon);
 		void	attack(void);
 };
+
+#endif
